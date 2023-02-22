@@ -1,0 +1,25 @@
+{
+  "name": "user-management-system",
+  "version": "1.0.0",
+  "description": "Crud Application with express and mongodb",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [
+    "mongodb",
+    "express",
+    "curd"
+  ],
+  "author": "Rahul B",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.6",
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0",
+    "morgan": "^1.10.0"
+  }
+}

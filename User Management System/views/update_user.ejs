@@ -1,0 +1,81 @@
+<!-- include header ejs -->
+<%-include('include/_header')%>
+    <!-- / include header -->
+
+    <!-- Main site -->
+    <main id="site-main" class="pad">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fas fa-angle-double-left"></i> All
+                        Users</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h3 class="text-dark">Update User</h3>
+                <span class="text-light">Use the below Form to Update an Account</span>
+            </div>
+
+
+            <!-- Form Handling -->
+            <form method="POST" class="pad" id="update_user">
+                <div class="new-user">
+                    <div class="form-group">
+                        <label for="name" class="text-light">Name</label>
+                        <input type="hidden" name="id" value="<%= users._id %>">
+                        <input type="text" name="name" value="<%= users.name %>"
+                        placeholder="Rahul B" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="text-light">Email</label>
+                        <input type="text" name="email" value="<%= users.email
+                            %>"
+                        placeholder="example@gamil.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender" class="text-light">Gender</label>
+                        <div class="radio inline">
+                            <input type="radio" name="gender" value="Male"
+                                required
+                            <%= users.gender =='Male'?'checked':'' %> >
+                            <label for="gender" class="text-light">Male</label>
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" name="gender"
+                                value="Female" required <%= users.gender
+                                =='Female'?'checked':'' %> >
+                            <label for="gender" class="text-light">Female</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="status" class="text-light">Status</label>
+                        <div class="radio inline">
+                            <input type="radio" name="status"
+                                value="Active" required <%=
+                                users.status =='Active'?'checked':'' %> required
+                            >
+                            <label for="status" class="text-light">Active</label>
+                        </div>
+                        <div class="radio inline">
+                            <input type="radio" name="status"
+                                value="Inactive" required <%=
+                                users.status =='Inactive'?'checked':'' %>>
+                            <label for="status" class="text-light">Inactive</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">Save
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <!-- /Main site -->
+
+    <!-- include footer ejs -->
+    <%-include('include/_footer')%>
+        <!-- / include footer -->

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+* {
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+:root {
+    --dark: #2c2d3b;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1024px;
+    margin: auto;
+    /* margin: 0 30%; */
+    /* display: flex;
+    justify-content: center; */
+}
+
+.nav-brand {
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.border-shadow {
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 8px #dcdede;
+}
+
+.text-dark {
+    color: var(--dark);
+}
+
+.inline {
+    display: inline-block;
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-gradient {
+    color: #8e3de2;
+    --webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 500;
+    --webkit-text-fill-color: transparent;
+}
+
+#header nav {
+    background-color: #21dbaa;
+    padding: .5em 0;
+    width: 100%;
+}
+
+#site-main {
+    margin-top: 5em;
+}
+
+#site-main .container .box-nav>a {
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+#site-main .container form {
+    padding: 3em 0;
+}
+
+table {
+    border-spacing: 0px;
+    width: 100%;
+}
+
+.table td,
+.table th {
+    padding: .5em;
+    text-align: center;
+    border-top: 2px solid var(--border);
+    vertical-align: top !important;
+}
+
+.table td>a.btn {
+    margin: 0 .5em;
+    padding: .3em 1em;
+    font-size: 1.2em;
+}
+
+.table tr:hover {
+    background-color: #49dab3;
+}
+
+.table tr:hover td>a {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: var(--dark);
+}
+
+/* ---------------- For Smaller Devices -------------- */
+@media only screen and (max-width:1024px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        border-top: 2px solid var(--dark);
+        margin-bottom: 20px;
+    }
+
+    td {
+        border: none;
+        position: relative;
+    }
+
+    .table td>a.btn {
+        margin: 1em;
+    }
+
+    .pad {
+        margin-top: 0.7em !important;
+        margin: 10px;
+    }
+}
+
+
+
+
+/* -------- Add User and Update User ----------- */
+
+.pad {
+    margin-top: 0.7em !important;
+}
+
+.filter a {
+    color: #8e3de2;
+}
+
+.form-title>h3 {
+    padding: .5em 0;
+}
+
+.new-user {
+    max-width: 786px;
+    margin: auto;
+}
+
+#update_user .form-group,
+#add_user .form-group {
+    margin: .5em 0;
+}
+
+#update_user .form-group input[type='text'],
+#add_user .form-group input[type='text'] {
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 2px solid var(--border);
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#update_user .form-group .radio,
+#add_user .form-group .radio {
+    margin: 1em 2em;
+}
+
+#update_user .form-group .btn,
+#add_user .form-group .btn {
+    width: 100%;
+    padding: .5em 1em;
+    border: none;
+    background-color: #21dbaa;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: 600;
+}
+
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover {
+    background-color: #2f313f;
+    color: #55f0c7;
+}
