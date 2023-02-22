@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    min-height: 100vh;
+}
+
+.brand {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #cb86ff;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.brand h1 {
+
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    color: #f7f4f4;
+}
+
+.brand img {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+section.chat-section {
+    background-color: #FFFFFF;
+    width: 800px;
+    max-width: 80%;
+    box-shadow: 0 0 10px #a9a8a8;
+    border-radius: 10px;
+}
+
+.message-area {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 30px;
+    overflow-y: auto;
+    height: 400px;
+}
+
+textarea {
+    background-color: rgb(241, 240, 240);
+    padding: 13px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.message {
+    padding: 10px;
+    max-width: 250px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.message p {
+    padding-top: 10px;
+}
+
+.incoming {
+    background-color: #d8a5ff;
+    border-radius: 15px 15px 15px 0px;
+    font-size: 14px;
+    margin-right: auto;
+}
+
+.outgoing {
+    background-color: #e7e8e7;
+    border-radius: 15px 15px 0px 15px;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.message h4 {
+    position: absolute;
+    left: 10px;
+    top: -20px;
+
+}
+
+@media only screen and (max-width:1024px) {
+    .message {
+        padding: 8px;
+        max-width: 200px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat Application</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <section class="chat-section">
+            <div class="brand">
+                <img src="img/Telegram-logo.png" alt="">
+                <h1>Talklyy</h1>
+            </div>
+            <div class="message-area">
+                <!-- Dynamically adding div in this div -->
+            </div>
+            <div>
+                <textarea id="textarea" cols="30" rows="1"
+                    placeholder="write a message . . ."></textarea>
+            </div>
+        </section>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/client.js"></script>
+    </body>
+</html>

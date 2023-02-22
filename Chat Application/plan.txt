@@ -1,0 +1,4 @@
+1. Create NPM Project
+2. Create public Folder
+3. install Dependencies
+4. Build Frontend
