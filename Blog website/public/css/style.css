@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Nunito', sans-serif;
+    /* font-weight: 600; */
+}
+
+body {
+    background-color: #f1f2f4;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 14px;
+}
+
+.card-text {
+    font-weight: 500;
+}
+
+.btn-success {
+    background-color: #01a137;
+    border-color: #01a137;
+}
+
+.btn {
+    margin-right: 15px;
+}
+
+.card {
+    border-radius: 0px;
+    background-color: #f7f7f7;
+}
+
+.card-body {
+    border-radius: 0px;
+    border: 15px solid #f7f7f7;
+}
+
+.card-body:hover {
+    cursor: pointer;
+    box-shadow: 0 0 25px 8px #d6d8d8;
+}
